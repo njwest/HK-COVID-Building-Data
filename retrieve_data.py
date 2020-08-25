@@ -40,7 +40,7 @@ with open('app/district_locations.json', encoding='utf-8') as f:
     districts_loc = json.load(f)
 
 for district in districts_loc:
-    name = district['properties']['name'].replace(
+    name = district['center']['properties']['name'].replace(
         '_And_', ' & ').replace('_', ' ')
     district['center']['properties']['cases'] = districts_final[name]
 
