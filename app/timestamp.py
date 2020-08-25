@@ -11,7 +11,7 @@ class Timestamp(object):
         month_ary = ['Jan', 'Feb', 'Mar', 'Apr', 'May',
                      'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-        month = month_ary[now.month + 1]
+        month = month_ary[now.month - 1]
 
         time_dict = {
             'hours': now.hour,
