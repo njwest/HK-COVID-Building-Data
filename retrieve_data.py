@@ -42,7 +42,7 @@ with open('app/district_locations.json', encoding='utf-8') as f:
 for district in districts_loc:
     name = district['properties']['name'].replace(
         '_And_', ' & ').replace('_', ' ')
-    district['properties']['cases'] = districts_final[name]
+    district['center']['properties']['cases'] = districts_final[name]
 
 totals = api_client.get_totals()
 t = Timestamp.get_hk_time()
