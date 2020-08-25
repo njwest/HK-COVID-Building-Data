@@ -1,6 +1,11 @@
 name: HK COVID Data Retrieval
 
-on: push
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 17 * * *"
 
 jobs:
   retrieve:
