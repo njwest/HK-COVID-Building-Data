@@ -1,0 +1,182 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Central_And_Western"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.139035, 22.274839999999998]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Wan_Chai"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.18516500000001, 22.273955]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Eastern"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.22396499999999, 22.273004999999998]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Southern"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.20959, 22.23412]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Yau_Tsim_Mong"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.168185, 22.307415]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Sham_Shui_Po"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.15359000000001, 22.331184999999998]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kowloon_City"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.19606, 22.321725]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Wong_Tai_Sin"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.201745, 22.34442]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kwun_Tong"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.223645, 22.308625]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Tsuen_Wan"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.081885, 22.36504]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Tuen_Mun"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [113.966035, 22.378875]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Yuen_Long"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.001065, 22.457195]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "North"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.207265, 22.517004999999997]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Tai_Po"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.28399999999999, 22.480865]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Sai_Kung"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.361795, 22.307344999999998]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Sha_Tin"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.19787500000001, 22.391579999999998]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kwai_Tsing"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.111195, 22.341]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Islands"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [114.06324000000001, 22.230674999999998]
+    }
+  }
+]
