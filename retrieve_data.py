@@ -5,6 +5,7 @@ from app.timestamp import Timestamp
 import geocoder
 import json
 import jsonpickle
+import os
 
 api_client = HkGovApiClient()
 raw_buildings_en, raw_buildings_zh = api_client.get_covid_buildings()
@@ -17,7 +18,7 @@ districts = {}
 for building in buildings:
     query = "{building}, {district} district, Hong Kong".format(
         district=building.district, building=building.name)
-    g = geocoder.google(query)
+    g = geocoder.google(query, key=os.environ['GOOGLE_API_KEY'])
     building_dict = building.return_as_dict()
     building_dict['address'] = g.address
     building_dict['lat'] = g.lat
@@ -45,7 +46,7 @@ for district in districts_loc:
 
 totals = api_client.get_totals()
 t = Timestamp.get_hk_time()
-data = {'districts': districts_loc, 'buildings': buildings,
+data = {'districts': districts_loc, 'buildings': buildings_dict,
         'timestamp': t, 'totals': totals}
 
 frozen = jsonpickle.encode(data)
