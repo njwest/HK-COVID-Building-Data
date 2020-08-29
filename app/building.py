@@ -87,7 +87,7 @@ class Building(object):
         for keyword in ['shopping', 'mall']:
             if keyword in name_lower:
                 return 'mall'
-        for keyword in ['restaurant', 'caf', 'kitchen', 'pizza']:
+        for keyword in ['restaurant', 'caf', 'kitchen', 'pizza', 'mcdonald']:
             if keyword in name_lower:
                 return 'restaurant'
         return 'non-residential'
