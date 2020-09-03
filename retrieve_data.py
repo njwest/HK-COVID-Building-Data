@@ -16,6 +16,8 @@ buildings = [Building(raw_data_en, raw_data_zh) for raw_data_en, raw_data_zh in 
 buildings_dict = []
 districts = {}
 for building in buildings:
+    if not building.in_range(14):
+        continue
     query = "{building}, {district} district, Hong Kong".format(
         district=building.district, building=building.name)
     g = geocoder.google(query, key=os.environ['GOOGLE_API_KEY'])
@@ -44,7 +46,7 @@ for district in districts_loc:
         '_And_', ' & ').replace('_', ' ')
     if name in districts_final:
         district['center']['properties']['cases'] = districts_final[name]
-    else :
+    else:
         district['center']['properties']['cases'] = districts_final[name] = 0
 
 

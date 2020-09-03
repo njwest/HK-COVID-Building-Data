@@ -14,7 +14,8 @@ class Building(object):
         self.residential = Building.is_residential(raw_data["Building name"])
         self.kind = Building.get_kind(
             self.residential, raw_data["Building name"])
-        self.date = Building.parse_date(
+        self.date = raw_data["Last date of residence of the case(s)"]
+        self.parsed_date = Building.parse_date(
             raw_data["Last date of residence of the case(s)"])
         self.case_count = Building.count_cases(
             raw_data["Related probable/confirmed cases"])
@@ -29,6 +30,11 @@ class Building(object):
             'Chi', self.raw_address)._asdict()
         self.geo_location = Building.parse_geo_location(
             self.raw_address)
+
+    def in_range(self, limit):
+        today = datetime.date.today()
+        diff = today - self.parsed_date
+        return diff.days <= limit
 
     def return_as_dict(self):
         return {
@@ -94,9 +100,8 @@ class Building(object):
 
     @ staticmethod
     def parse_date(date_string):
-        return date_string
         split_string = [int(x) for x in date_string.split('/')]
-        date = datetime.datetime(
+        date = datetime.date(
             split_string[2], split_string[1], split_string[0])
         return date
 
